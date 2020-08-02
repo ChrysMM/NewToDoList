@@ -1,0 +1,10 @@
+ <input [(ngModel)]="task">
+ <button (click)="addTask()">ok</button> <!--insérer (click)="nomMethode()" dans la balise souhaitée et on déclarera également cette méthode dans 
+le composant qui contiendra la logique de l'action.-->
+
+<ul>
+    <li *ngFor="let task of toDoList">
+        <span>{{task}}</span>
+    </li>
+     
+</ul>
